@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div id="menu">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#photos">My Photos</a></li>
+            <li><a href="#playlist">My Playlist</a></li>
+            <li><a href="#like">Like</a></li>
+            <li><a href="#qrcoder">QR code</a></li>
+            <li><a href="#spa">SPA Q&A</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    <section id="about" class="section">
+        <br />
+        <br />
+        <h1>This is the header</h1>
+        <p>
+        My name is Nir Zagdanski.
+            I am a student to ISE in BGU.
+            <br />
+            This is my dummy homework-assaginment personalized website
+            <br />
+            I like parrots, carrots, and drinking coffee
+            <br />
+            I hope one day I'll be an astronaut
+            <br />
+            Mom always told me "life is like a box of chocolate"
+        </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            about me
+            <br />
+            <br />
+            <br />
+</section>
+
+    <section id="photos" class="section">
+        this is a photo of me
+        <h2>Spectacular Mountain</h2>
+        <img src="images\pic1.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+        <br />
+        this is another photo of me.
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        my photos
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="playlist" class="section">
+        these are my top 3 songs and movies
+        <br />
+        <br />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLC1A05C27D61C3D48" frameborder="0" allowfullscreen></iframe>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        my playlist
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="like" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        give me a like
+        <div class="fb-like" data-href="https://www.facebook.com/bgu.uni/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="qrcoder" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <img src="images\qr.png" alt="Mountain View">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        scan my code
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="spa" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        ans
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="contact" class="section">
+        <br />
+        <br />
+        <br />
+
+        <h2>Send e-mail to someone@example.com:</h2>
+
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Comment:<br>
+            <input type="text" name="comment" size="50"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        contact me
+        <br />
+        <br />
+        <br />
+    </section>
+
+
+    <script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash);
+  });
+});
+    </script>
+    <script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });
+
+
+
+    </script>
+</body>
+</html>
